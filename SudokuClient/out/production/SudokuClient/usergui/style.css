@@ -1,0 +1,39 @@
+.basePane {
+    /*-fx-background-color: #66101F;*/
+    -fx-background-color: #b11a21;
+
+}
+
+.button {
+    /*-fx-background-color: #855A5C;*/
+    -fx-background-color: #7acfd6;
+    -fx-border-color: #000000;
+    -fx-border-radius: 7;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+
+}
+
+.button:hover {
+    -fx-background-color: #ecf0f1;
+}
+
+.button:pressed {
+    -fx-effect: innershadow( gaussian , rgba(0,0,0,0.6) , 20,0,0,0 );
+}
+
+.button-number {
+    -fx-background-color: #e0474c;
+}
+
+.button, .titled-pane {
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.titled-pane > .title {
+    -fx-background-color: #e0474c;
+}
+
+.titled-pane > *.content {
+    -fx-background-color: #f1f0ee;
+}
