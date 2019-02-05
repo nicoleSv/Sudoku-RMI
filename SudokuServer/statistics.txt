@@ -1,0 +1,46 @@
+nicoleSv  
+Levels
+ hard: 1 game(s)
+ easy: 2 game(s)
+ medium: 2 game(s)
+Results
+ solved: 1 game(s)
+ unsolved: 2 game(s)
+Total time played: 00:08:33
+
+Gathling  
+Levels
+ hard: 1 game(s)
+ easy: 2 game(s)
+Results
+ solved: 1 game(s)
+ unsolved: 1 game(s)
+Total time played: 00:03:35
+
+Nysalla   
+Levels
+ easy: 3 game(s)
+ medium: 1 game(s)
+Results
+ unsolved: 3 game(s)
+Total time played: 00:01:36
+
+Nyssloan  
+Levels
+ hard: 2 game(s)
+ medium: 1 game(s)
+ easy: 2 game(s)
+Results
+ solved: 1 game(s)
+ unsolved: 2 game(s)
+Total time played: 00:02:59
+
+Gath      
+Levels
+ hard: 1 game(s)
+ medium: 1 game(s)
+ easy: 2 game(s)
+Results
+ unsolved: 2 game(s)
+Total time played: 00:00:16
+
