@@ -401,18 +401,27 @@ public class UserController {
      */
     @FXML
     void optEasyClicked(MouseEvent event) {
+        if(!isSolved)
+            saveResults(GameOutcome.UNSOLVED);
+
         currentLevel = LevelType.EASY;
         startNewGame();
     }
 
     @FXML
     void optHardClicked(MouseEvent event) {
+        if(!isSolved)
+            saveResults(GameOutcome.UNSOLVED);
+
         currentLevel = LevelType.HARD;
         startNewGame();
     }
 
     @FXML
     void optMediumClicked(MouseEvent event) {
+        if(!isSolved)
+            saveResults(GameOutcome.UNSOLVED);
+
         currentLevel = LevelType.MEDIUM;
         startNewGame();
     }
@@ -461,7 +470,8 @@ public class UserController {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Sudoku Solved");
             alert.setHeaderText("Congratulations!");
-            alert.setContentText("You successfully solved the puzzle!");
+            alert.setContentText(String.format("You successfully solved the puzzle in %s!",
+                    timer.convertToTime(timer.getMilliseconds())));
             alert.showAndWait();
         }
         else {

@@ -83,7 +83,7 @@ public class TimerManager {
      * @param milliseconds
      * @return
      */
-    private String convertToTime(long milliseconds) {
+    public String convertToTime(long milliseconds) {
         long seconds = (milliseconds / 1000) % 60;
         long minutes = (milliseconds / (1000 * 60)) % 60;
         long hours = milliseconds / (1000 * 60 * 60);
