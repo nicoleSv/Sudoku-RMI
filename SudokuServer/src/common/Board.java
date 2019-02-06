@@ -45,6 +45,9 @@ public class Board implements Iterable<Cell>, Serializable {
      * @return cell which is in given row and column
      */
     public Cell getCell(int row, int col) {
+        if(row < 0 || row > 8 || col < 0 || col > 8)
+            return null;
+
         return grid[row][col];
     }
 
@@ -82,6 +85,8 @@ public class Board implements Iterable<Cell>, Serializable {
      * @return if value is valid to place in cell
      */
     public boolean isValid(Cell cell, int value) {
+        if(cell == null) return false;
+
         return testRow(cell.getRow(), value) &&
                 testColumn(cell.getColumn(), value) &&
                 testBlock(cell, value);
@@ -94,6 +99,9 @@ public class Board implements Iterable<Cell>, Serializable {
      * @return true, if value is not already in given row; false, if it is
      */
     private boolean testRow(int row, int value) {
+        if(row < 0 || row > 8 || value < 1 || value > 9)
+            return false;
+
         for(Cell cell : grid[row]) {
             if(cell.getValue() == value)
                 return false;
@@ -109,6 +117,9 @@ public class Board implements Iterable<Cell>, Serializable {
      * @return true, if value is not already in given column; false, if it is
      */
     private boolean testColumn(int col, int value) {
+        if(col < 0 || col > 8 || value < 1 || value > 9)
+            return false;
+
         for(Cell[] cells : grid) {
             if(cells[col].getValue() == value)
                 return false;
@@ -124,6 +135,9 @@ public class Board implements Iterable<Cell>, Serializable {
      * @return true, if value is not already in current block; false, if it is
      */
     private boolean testBlock(Cell testedCell, int value) {
+        if(testedCell == null || !(value > 0 && value <= 9))
+            return false;
+
         for(Cell cell : blocks.get(testedCell.getBlock())) {
             if(cell.getValue() == value) {
                 return false;

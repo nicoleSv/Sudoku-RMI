@@ -29,13 +29,13 @@ public class Cell implements Serializable {
     }
 
     public Cell(Cell otherCell) {
-        this.row = otherCell.row;
-        this.column = otherCell.column;
-        this.block = otherCell.block;
-        this.value = otherCell.value;
-        this.savedValue = otherCell.savedValue;
-        this.correctValue = otherCell.correctValue;
-        this.previousValue = otherCell.previousValue;
+        this.row = otherCell.row > 0 && otherCell.row < 9 ? otherCell.row : 0;
+        this.column = otherCell.column > 0 && otherCell.column < 9 ? otherCell.column : 0;
+        this.block = otherCell.block > 0 && otherCell.block < 9 ? otherCell.block : 0;
+        this.value = otherCell.value >= 1 && otherCell.value <= 9 ? otherCell.value : 0;
+        this.savedValue = otherCell.savedValue >= 1 && otherCell.savedValue <= 9 ? otherCell.savedValue : 0;
+        this.correctValue = otherCell.correctValue >= 1 && otherCell.correctValue <= 9 ? otherCell.correctValue : 0;
+        this.previousValue = otherCell.previousValue >= 1 && otherCell.previousValue <= 9 ? otherCell.previousValue : 0;
     }
 
     public int getRow() {
@@ -60,7 +60,7 @@ public class Cell implements Serializable {
      */
     public void setValue(int value) {
         this.previousValue = this.value;
-        this.value = value > 0 && value < 10 ? value : 0;
+        this.value = value >= 1 && value <= 9 ? value : 0;
     }
 
     public int getPreviousValue() { return previousValue; }

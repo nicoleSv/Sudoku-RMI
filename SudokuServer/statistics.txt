@@ -44,3 +44,50 @@ Results
  unsolved: 2 game(s)
 Total time played: 00:00:16
 
+blah      
+Levels
+ easy: 2 game(s)
+ medium: 2 game(s)
+Results
+ unsolved: 4 game(s)
+Total time played: 00:00:23
+
+haze      
+Levels
+ easy: 1 game(s)
+Results
+ unsolved: 1 game(s)
+Total time played: 00:09:02
+
+missa     
+Levels
+ easy: 1 game(s)
+Results
+ solved: 1 game(s)
+Total time played: 00:06:04
+
+pewds     
+Levels
+ easy: 1 game(s)
+ medium: 2 game(s)
+ hard: 1 game(s)
+Results
+ unsolved: 3 game(s)
+ solved: 1 game(s)
+Total time played: 00:05:47
+
+user      
+Levels
+ easy: 1 game(s)
+Results
+ unsolved: 1 game(s)
+Total time played: 00:00:30
+
+user2     
+Levels
+ medium: 1 game(s)
+ easy: 2 game(s)
+Results
+ unsolved: 3 game(s)
+Total time played: 00:00:24
+
